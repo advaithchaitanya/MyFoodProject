@@ -37,8 +37,15 @@ const page=document.querySelector("#sL");
 const signForm=document.querySelector("#signIn");
 const loginForm=document.querySelector("#login");
 const cred=document.querySelector("#cred");
+const cred1=document.querySelector("#cred1");
 const moon=document.querySelector("#moon");
 const xbtn=document.querySelectorAll(".xx");
+cred1.onclick=()=>{
+    alert("Please sign in to continue");
+    moon.classList.remove("hidden");
+    moon.classList.add("flex");
+    body.classList.remove("overflow-hidden");
+}
 xbtn.forEach((btn)=>{
     btn.onclick=()=>{
         // details.classList.toggle("ac");
